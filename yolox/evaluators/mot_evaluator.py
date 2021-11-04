@@ -176,6 +176,9 @@ class MOTEvaluator:
                     start = time.time()
 
                 outputs = model(imgs)
+                
+                print(outputs)
+                
                 if decoder is not None:
                     outputs = decoder(outputs, dtype=outputs.type())
 
